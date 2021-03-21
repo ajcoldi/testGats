@@ -1,0 +1,36 @@
+nav {
+  padding: 10px 0;
+}
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+nav li {
+  list-style: none;
+}
+nav a {
+  padding: 10px 20px;
+  padding-right: 30px;
+  text-decoration: none;
+  color: white;
+  background: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
+  border-top-right-radius: 20px;
+  font-weight: 100;
+  font-size: 12px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+nav a:hover {
+  background-color: #57addf;
+  opacity: 0.8;
+}
+nav .activeNavItem {
+  background-color: #57addf;
+}/*# sourceMappingURL=nav.css.map */

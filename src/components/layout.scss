@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'muli';
+    background: url('/images/lightdark.jpg');
+    background-attachment: fixed; 
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.githubBanner{
+    clip-path: polygon(0 0, 35% 0, 100% 65%, 100% 100%);
+    background-color: rgb(87, 173, 223);
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 300px;
+    width: 300px;
+    z-index: 99;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
+
+}
+.githubLink{
+    background:url('/images/githubWhite.png');
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border-radius: 50px;
+    left: 20px;
+    bottom: 30px;
+}
+.btmLeftCorner{
+    clip-path: polygon(0 0, 0 100%, 100% 100%);
+    background-color: rgb(87, 173, 223);
+    position: relative;
+    left: 50px;
+    margin-top: -115px;
+    z-index: 99;
+    height: 120px;
+    width: 120px;
+
+    
+}
+
+@media only screen and (max-width: 900px) {
+    .githubBanner{
+        display: none;  
+    }
+    .btmLeftCorner{
+        display: none;  
+    }
+
+}

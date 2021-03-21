@@ -1,0 +1,23 @@
+.projectsWrapper {
+  border: solid 2px white;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas: "p1 p2 p3";
+}
+.projectsWrapper #project1 {
+  grid-area: p1;
+}
+.projectsWrapper #project2 {
+  grid-area: p2;
+}
+.projectsWrapper #project3 {
+  grid-area: p3;
+}
+.projectsWrapper .project {
+  border: solid 2px grey;
+}
+.projectsWrapper .project img {
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=projects.css.map */
