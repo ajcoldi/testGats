@@ -1,137 +1,103 @@
 
 body{
-    min-width: 280px;
-}
-.skillsWrapper{
-padding-top: 100px; 
-padding-bottom: 60px;
-width: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
-
-
-.skill{         
-    padding: 10px;
-    display: flex;
-    
-    h3{}
-    p{
-        padding-left: 10px;
-    }
   
 }
-        .skillsText{
-            padding: 20px;
-            }   
-        }
-        .knowOf{
-            margin: 10px;
-            
-            .KOTitle{
-                background: none;
-                text-decoration: underline;
+.skillsWrapper{
+    min-width: 60%;
+    max-width: 80%;
+    margin: auto;
+    h2{
+        padding:20px ;
+        text-align: center;
+    }
+    .skillsText{
+        
+        height: 50vh;
+        margin: auto;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+            "sk1 sk2 sk3"
+            "sk4 sk5 sk6"
+        ;
+        .skill{
+            display: flex;   
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: solid 2px #303030;    
+            h3{
+                text-align: center;
+                width: 100%;
             }
+            p{}
+    }   
+        .blue{
+            border: solid 2px rgb(87, 173, 223);
         }
+    #skill1{grid-area: sk1;}
+    #skill2{grid-area: sk2;}
+    #skill3{grid-area: sk3;}
+    #skill4{grid-area: sk4;}
+    #skill5{grid-area: sk5;}
+    #skill6{grid-area: sk6;}
+    }
+}
+
+        .knowOf{ 
+             
+                margin: auto;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                grid-template-rows: 1fr ;
+                grid-template-areas: 
+                "ko1 ko2 ko3 ko4 ko5"
+                ;
+           
+                
+                .skill{
+                    display: flex;   
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;  
+                    border-top: solid 2px #303030;   
+                    border-bottom: solid 2px #303030;   
+                }
+                .blue{background: rgb(87, 173, 223);}
+                #KO1{grid-area: ko1;}
+                #KO2{grid-area: ko2;}
+                #KO3{grid-area: ko3;}
+                #KO4{grid-area: ko4;}
+                #KO5{grid-area: ko5;}
+        
+    }
+
+    .KOTitle{
+        text-align: center;
+        width: 100%;
+        padding: 20px;
+    }
+
+
+
+
+
+
+
+
+
         .stackIcons{
             padding: 40px;
             display: flex;
             justify-content: center;
             align-items: center;
+            display: none;
             img{
                 width: 40px;
                 margin: 0 20px ;
                 display: inline-block;
             }
         }
-        @media only screen and (max-width: 800px) {      
-
-     
-.skill{         
-    padding: 0;
-    margin: 0;
-    flex-direction: column;
-    
-    }
-.skillsWrapper{
-padding-top: 40px; 
-padding-bottom: 60px;
-width: 80%;
-text-align: left;
-flex-direction: column;
-align-items: flex-start;
-h3{margin: none;}
-p{
-    padding-top:  5px;
-    margin: 0;}
-        .skillsText{
-            padding: 0;
-            padding-left: 20px;
-            margin: 0;
-            }   
-        }
-        .knowOf{
-            padding: 0;
-            padding-left: 20px;
-            margin: 0;
-            .KOTitle{
-            
-                background: none;
-                text-decoration: underline;
-            }
-        }
-        .stackIcons{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 60px;
-            
-            position: absolute;
-            padding: 10px;
-            right: 0px;
-            top: 40px;
-            img{
-                width: 30px;
-                margin:10px ;
-                display: inline-block;
-            }
-        }
-           
-        }
-                    
-@media only screen and (max-width: 600px) { 
-    
-    .skill{         
-        padding: 10px;
-        
-        }
-.skillsWrapper{
-    padding-top: 40px; 
-    width: 85%;
-    text-align: left;
-    h3{margin: 0;}
-            .skillsText{
-                
-                }   
-            }
-            .knowOf{
-                
-                
-                .KOTitle{
-                
-                    background: none;
-                    text-decoration: underline;
-                }
-            }
-            .stackIcons{
-                
-                
-                img{
-                    width: 30px;
-                    margin:10px auto;
-                }
-            }
-
-
-}
+      
