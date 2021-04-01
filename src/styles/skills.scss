@@ -1,36 +1,116 @@
-h1{
-    color: rgb(87, 173, 223);
-    font-size: 65px;
-    font-weight: 800;
-    margin: auto;
-    
 
-    }
-    h3{
-        text-align: center;
-        margin: auto;
-        font-size: 14px;
-        font-weight: 500;
-        letter-spacing: 1.5px;
-        background:  rgb(87, 173, 223);
-        color: white;
-        width: fit-content;
-        padding: 2px 20px;
-        list-style-type: square;
-    }    
+body{
+    min-width: 280px;
+}
+.skillsWrapper{
+padding-top: 100px; 
+padding-bottom: 60px;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+.skill{         
+    padding: 10px;
+    display: flex;
+    
+    h3{}
     p{
-        font-weight: 100;
-        font-size: 12px;
-        color: white;
-        padding: 5px 0;
+        padding-left: 10px;
     }
+  
+}
+        .skillsText{
+            padding: 20px;
+            }   
+        }
+        .knowOf{
+            margin: 10px;
+            
+            .KOTitle{
+                background: none;
+                text-decoration: underline;
+            }
+        }
+        .stackIcons{
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 40px;
+                margin: 0 20px ;
+                display: inline-block;
+            }
+        }
+        @media only screen and (max-width: 800px) {      
+
+     
+.skill{         
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    
+    }
+.skillsWrapper{
+padding-top: 40px; 
+padding-bottom: 60px;
+width: 80%;
+text-align: left;
+flex-direction: column;
+align-items: flex-start;
+h3{margin: none;}
+p{
+    padding-top:  5px;
+    margin: 0;}
+        .skillsText{
+            padding: 0;
+            padding-left: 20px;
+            margin: 0;
+            }   
+        }
+        .knowOf{
+            padding: 0;
+            padding-left: 20px;
+            margin: 0;
+            .KOTitle{
+            
+                background: none;
+                text-decoration: underline;
+            }
+        }
+        .stackIcons{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            
+            position: absolute;
+            padding: 10px;
+            right: 0px;
+            top: 40px;
+            img{
+                width: 30px;
+                margin:10px ;
+                display: inline-block;
+            }
+        }
+           
+        }
+                    
+@media only screen and (max-width: 600px) { 
+    
     .skill{         
-        margin: 10px;
-        text-align: center;
+        padding: 10px;
+        
         }
 .skillsWrapper{
-                
-
+    padding-top: 40px; 
+    width: 85%;
+    text-align: left;
+    h3{margin: 0;}
             .skillsText{
                 
                 }   
@@ -45,44 +125,13 @@ h1{
                 }
             }
             .stackIcons{
-             
-                width: 70%;
-                margin: auto;
-         
-                display: grid;
-                grid-template-columns: auto;
-                grid-template-rows: auto;
-                grid-template-areas: 
-                "img1 img2 img3 img4 img5 img6 img7"
-                ;
-                #img1{grid-area: img1;}
-                #img2{grid-area: img2;}
-                #img3{grid-area: img3;}
-                #img4{grid-area: img4;}
-                #img5{grid-area: img5;}
-                #img6{grid-area: img6;}
-                #img7{grid-area: img7;}
+                
+                
                 img{
-                    width: 50px;
+                    width: 30px;
                     margin:10px auto;
                 }
             }
 
 
-            @media only screen and (max-width: 500px) {
-                h1{
-                    padding-top: 20%;
-                    text-align: center;
-                }
-                .stackIcons{
-                    
-                    grid-template-areas: 
-                "img1 img2 img3"
-                "img4 img5 img6"
-                ". img7 ."
-                ;
-                }
-            
-                
-                
-            }
+}

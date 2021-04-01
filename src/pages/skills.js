@@ -8,8 +8,11 @@ const skillsPage = () => {
     return (
         <Layout>
             
-            <h1>skills:</h1>
+            
                 <div className="skillsWrapper">
+
+
+
                     <div className="skillsText"> 
                         <div className="skill">
                             <h3>HTML</h3>
@@ -17,14 +20,21 @@ const skillsPage = () => {
                         </div>
                         <div className="skill">
                             <h3>CSS</h3>
-                            <p>Flexbox / Grids / Media queries / Animations</p>
+                            <p>Grids / Flex / Bootstrap / SASS </p>
                         </div>
                         <div className="skill">
                             <h3>JAVASCRIPT/JQUERY</h3>
-                            <p>OOP / General UI / Form Validation / API's</p>
+                            <p>OOP / UI / Form Validation / API's</p>
+                        </div>
+                        <div className="skill">
+                            <h3>LIGHTBOX</h3>
                         </div>
                         <div className="skill">
                             <h3>REACT/GATSBY</h3>
+                            <p>Components and Modules / Headless CMS / Plugins</p>
+                        </div>
+                        <div className="skill">
+                            <h3>GIT</h3>
                         </div>
                     </div>
                    
@@ -35,8 +45,16 @@ const skillsPage = () => {
                                 <p>PDO - MVC / validation / Security / xampp</p>
                             </div>
                             <div className="skill">
-                                <h3>Angular</h3>
-                                <p>presets / portability / Environment</p>
+                                <h3>SQL</h3>
+                            </div>
+                            <div className="skill">
+                                <h3>GRAPHQL</h3>
+                            </div>
+                            <div className="skill">
+                                <h3>XAMPP</h3>
+                            </div>
+                            <div className="skill">
+                                <h3>NPM</h3>
                             </div>
                             
                     </div>

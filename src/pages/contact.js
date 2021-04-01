@@ -7,13 +7,13 @@ import Layout from '../components/layout'
 const contactPage = () => {
     return (
         <Layout>
-        <h1>contact</h1>
-        <form>
+      
+        <form name="contact" method="POST" data-netlify="true">
             <input placeholder="Name"></input>
             <input placeholder="Email"></input>
             <input placeholder="Phone"></input>
             <textarea placeholder="Message"></textarea>
-            <button type="button"> Send</button>
+            <button type="submit"> Send</button>
         </form>
         </Layout>
     )

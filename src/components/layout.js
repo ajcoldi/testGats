@@ -14,7 +14,7 @@ const Layout = (props) => {
              <Helmet>
                 <script src={withPrefix('script.js')} type="text/javascript" />
             </Helmet>
-            <div className="githubBanner"><Link to="/"><div className="githubLink"></div></Link></div>
+            <div className="githubBanner"><Link to="https://github.com/ajcoldi"><div className="githubLink"></div></Link></div>
             <Nav />
             <ContentWrap>
             {props.children}

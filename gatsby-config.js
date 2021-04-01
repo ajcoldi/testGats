@@ -10,6 +10,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
+    `gatsby-plugin-glamor`,
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
@@ -17,6 +18,12 @@ module.exports = {
           'roboto mono', 'muli\:400,400i,700,700i',
         ],
         display: 'swap'
+      },
+    },
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        // Add any options here
       },
     },
   ],
