@@ -41,7 +41,6 @@ const skillsPage = () => {
                         
                             <div id="KO1" className="skill blue">
                                 <h3>PHP</h3>
-                                <p>PDO - MVC / validation / Security / xampp</p>
                             </div>
                             <div id="KO2" className="skill ">
                                 <h3>SQL</h3>
