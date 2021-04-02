@@ -9,7 +9,7 @@ body{
     background-size: cover;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    
     font-family: 'Roboto', sans-serif;
     min-width: 280px;
     
@@ -55,13 +55,14 @@ h1{
     color: rgb(87, 173, 223);
     font-size: 65px;
     font-weight: 800;
+    
 }
 h2{
+    padding: 20px 0;
     font-size: 25px;
     font-weight: 600;
     letter-spacing: 1.5px;
     color: white;
-    padding-left: 50px;
 }      
 h3{
     font-size: 14px;
@@ -69,16 +70,17 @@ h3{
     letter-spacing: 1.5px;
     color: white;
     width: fit-content;
-    padding: 2px 20px;
     list-style-type: square;
 }    
 p{
-    font-weight: 100;
-    font-size: 12px;
+    font-weight: 400;
+    font-size: 14px;
     color: white;
-    padding: 5px 0;
 }
 @media only screen and (max-width: 900px) {
+    body{
+        height: 80vh;
+    }
     .githubBanner{
         display: none;  
         
@@ -99,24 +101,22 @@ p{
     }
     h2{
         font-size: 25px;
-        font-weight: 200;
+        font-weight: 400;
         letter-spacing: 0px;
-        padding-left: 0px;
+      
         }    
         
     }
     @media only screen and (max-width: 300px) {
         h1{
-            padding-top: 0;
-            margin-top: 0;
+           
             font-size: 35px;
             font-weight: 800;
         
         }
         h2{
             font-size: 18px;
-            font-weight: 200;
             letter-spacing: 0px;
-            padding-left: 0px;
+    
             }    
         }
