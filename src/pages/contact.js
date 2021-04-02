@@ -8,13 +8,26 @@ const contactPage = () => {
     return (
         <Layout>
             <div className="formWrapper">
-                <form method="POST" action="/thank-you/english.html" name="contactform" data-netlify="true"  data-netlify-honeypot="bot-field" enctype="application/x-www-form-urlencoded" >
-                    <input type="text" name="name" placeholder="Name"></input>
-                    <input type="email" name="email" placeholder="Email"></input>
-                    <input type="number" name="number" placeholder="Phone"></input>
-                    <textarea name="message" placeholder="Message"></textarea>
-                    <button type="submit"> Send</button>
-                </form>
+            <form name="contact" method="POST" data-netlify="true">
+  <p>
+    <label>Your Name: <input type="text" name="name" /></label>   
+  </p>
+  <p>
+    <label>Your Email: <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <label>Your Role: <select name="role[]" multiple>
+      <option value="leader">Leader</option>
+      <option value="follower">Follower</option>
+    </select></label>
+  </p>
+  <p>
+    <label>Message: <textarea name="message"></textarea></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
             </div>
         </Layout>
     )
