@@ -1,56 +1,20 @@
 
 body{
-    min-width: 320px;
+  min-width: 300px;
 }
 .projectsWrapper{
-    height: 75%;
     width: 100%;
     padding: 0 5%;
     margin-top: 20px;
     text-align: center;
-    h2{
-        text-align: left;
-        padding: 10px;
-    }
-    
     hr{
-        margin: 10px;
         margin-bottom: 40px;
     }
     .project{  
-        display: inline-block;
-        margin: 0 auto;
-        margin: 0 20px;
-        img{
-            margin: 10px 0px;
-        }
-        .projectTxt{
-            position: relative;
-            bottom: 62px;
-            padding: 2px;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            align-items: center;
-            text-align: center;
-            background: black;
-            opacity: 0.8;
-            transition: 0.3s;
-            h3{
-                background: none;
-                color: white;
-                
-               
-            }
-            p{
-                
-            font-size: 12px;
-                
-            }
-            
+        display: inline-block; 
+        img{}    
         }
         button{
-        
             background: rgb(87, 173, 223);
             border: none; 
             color: white;
@@ -60,17 +24,11 @@ body{
         button:hover{
             cursor: pointer;
         }
-        .projectTxt:hover{
-            opacity: 0;
-        }
     }
-    .project:hover{
-        cursor: pointer;
-    }
-}
-
 @media only screen and (max-width: 500px) {
-   
+  .projectsWrapper{
+    width: 100%;
+    padding: 0 0%;
     .project{  
         display: inline-block;
         margin: 0 auto;
@@ -83,15 +41,11 @@ body{
         }
     }
 }
+}
 
 .gallery-wrapper {
-    max-width: 960px;
     width: 100%;
-    margin: 0 auto;
-    padding: 0 1em;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-    grid-gap: 1em;
+    
   }
   .gallery-wrapper .image-wrapper a {
     padding: 0.5em;
@@ -102,10 +56,12 @@ body{
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     transition: all 200ms ease-in-out;
     text-align: center;
+
   }
   .image-title{text-align: center;}
   .gallery-wrapper .image-wrapper a:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    
   }
   .gallery-wrapper .image-wrapper a img {
     width: 100%;
@@ -115,7 +71,7 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    
+
     height: 100vh;
     width: 100%;
     background: rgba(0, 0, 0, 0.8);
@@ -130,10 +86,12 @@ body{
   .gallery-lightboxes .image-lightbox:target {
     opacity: 1;
     visibility: visible;
+    
   }
   .gallery-lightboxes .image-lightbox:target .image-lightbox-wrapper {
     opacity: 1;
     transform: scale(1, 1) translateY(0);
+    
   }
   .gallery-lightboxes .image-lightbox .image-lightbox-wrapper {
     transform: scale(0.95, 0.95) translateY(-30px);
@@ -146,6 +104,7 @@ body{
     background: #fff;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
     position: relative;
+    
   }
   .gallery-lightboxes .image-lightbox .image-lightbox-wrapper .close {
     width: 1.5em;
@@ -159,6 +118,7 @@ body{
     position: absolute;
     right: -1em;
     top: -1em;
+    
   }
   .gallery-lightboxes .image-lightbox .image-lightbox-wrapper .close:before {
     content: "";
@@ -172,6 +132,7 @@ body{
     left: 50%;
     margin: -1px 0 0 -5px;
     transform: rotate(-45deg);
+    
   }
   .gallery-lightboxes .image-lightbox .image-lightbox-wrapper .close:after {
     content: "";
@@ -232,5 +193,6 @@ body{
   }
   .gallery-lightboxes .image-lightbox .image-lightbox-wrapper img {
     margin: 0 auto;
-    max-height: 70vh;
+    width: 100%;
+
   }

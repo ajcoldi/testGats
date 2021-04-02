@@ -18,7 +18,7 @@ const projectPage = () => {
         <h2>Web Development</h2>
         
         <hr/>
-        
+        <div className="gallery-wrapper">
             <div className="project">
                 <div className="image-wrapper">
                     <a href="#lightbox-image-1">
@@ -108,7 +108,7 @@ const projectPage = () => {
                 </div>
             </div>
         </div>
-
+        </div>
         <div className="gallery-lightboxes">
 
         <div className="image-lightbox" id="lightbox-image-1">
