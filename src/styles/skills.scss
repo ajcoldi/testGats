@@ -100,4 +100,61 @@ body{
                 display: inline-block;
             }
         }
-      
+        @media only screen and (max-width: 800px) {
+            .skillsWrapper{
+                .skillsText{
+            
+                    height: 70vh;
+                    margin: auto;
+                    text-align: center;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr ;
+                    grid-template-rows: 1fr 1fr 1fr;
+                    grid-template-areas: 
+                        "sk1 sk4"
+                        "sk2 sk5"
+                        "sk3 sk6"
+                    ;}
+                    .knowOf{ 
+                        margin: auto;
+                        padding-bottom: 20px;
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr ;
+                        grid-template-rows: 1fr 1fr;
+                        grid-template-areas: 
+                        "ko1 ko2 ko3 "
+                        "ko4 ko5 ."
+                        
+                        ;}
+        }}
+        @media only screen and (max-width: 550px) {
+            .skillsWrapper{
+                .skillsText{
+            
+                    height: 70vh;
+                    margin: auto;
+                    text-align: center;
+                    display: grid;
+                    grid-template-columns: 1fr ;
+                    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+                    grid-template-areas: 
+                        "sk1 "
+                        "sk2"
+                        "sk3"
+                        "sk4"
+                        "sk5"
+                        "sk6"
+                    ;}
+                    .knowOf{ 
+                        margin: auto;
+                        padding-bottom: 20px;
+                        display: grid;
+                        grid-template-columns: 1fr 1fr ;
+                        grid-template-rows: 1fr 1fr 1fr;
+                        grid-template-areas: 
+                        "ko1 ko4"
+                        "ko2 ko5"
+                        "ko3 ."
+                        
+                        ;}
+        }}
