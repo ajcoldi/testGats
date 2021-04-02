@@ -11,24 +11,28 @@ form{
     width: 40%;
     height: 65vh;
     margin: auto;
-    padding: 40px 0;
     border-radius: 5px;
-    padding:10px;
     border: solid 2px #303030;
-    input{
-        height: 40px;
-        background: none;
-        margin: 10px;
-        border: none;
-        border-bottom: solid 2px #303030;
-        color: white;
-        
+    padding: 20px;
+    p{
+        label{
+            input{
+                width: 100%;
+                height: 40px;
+                background: none;
+                border: none;
+                border-bottom: solid 2px #303030;
+                color: white;
+                
+            }
+        }
     }
+    
     textarea{
+        width: 100%;
         height: 190px;
         background: none;
-        margin: 10px;
-        padding: 5px;
+        background: none;
         border: none;
         border-bottom: solid 2px #303030;
         color: white;
