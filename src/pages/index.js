@@ -12,7 +12,7 @@ const indexPage = () => {
                     <h2>About Me</h2>
                     <p>Hi, I'm Alex. Hull based Web developer and I love what I do! 
                     <br/>From complex projects using frameworks like React or vue, to rapid deployment of small scale CSS projects, my workflow is streamlined and my prices are competitive.
-                    If you have any queries then please feel free to <Link className="contactAnchor" to="/contact">get in touch</Link></p>   
+                    If you have any queries then please feel free to <br/> <Link className="contactAnchor" to="/contact">get in touch</Link></p>   
                 </div>
                 <div className="homeHeader">
                     <div className="headerTxt">
