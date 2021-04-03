@@ -1,0 +1,105 @@
+.formWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 90vh;
+  width: 100%;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 40%;
+  height: 65vh;
+  margin: auto;
+  border-radius: 5px;
+  border: solid 2px #303030;
+  padding: 20px;
+}
+form p label {
+  font-size: 0px;
+}
+form p label input {
+  width: 100%;
+  height: 40px;
+  background: none;
+  border: none;
+  border-bottom: solid 2px #303030;
+  color: white;
+}
+form p label ::-webkit-input-placeholder {
+  color: white;
+  opacity: 1;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  padding: 5px;
+}
+form p label ::-moz-placeholder {
+  color: white;
+  opacity: 1;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  padding: 5px;
+}
+form p label :-ms-input-placeholder {
+  color: white;
+  opacity: 1;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  padding: 5px;
+}
+form p label ::-ms-input-placeholder {
+  color: white;
+  opacity: 1;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  padding: 5px;
+}
+form p label ::placeholder {
+  color: white;
+  opacity: 1;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  padding: 5px;
+}
+form textarea {
+  width: 100%;
+  height: 190px;
+  background: none;
+  background: none;
+  border: none;
+  border-bottom: solid 2px #303030;
+  color: white;
+}
+form button {
+  height: 30px;
+  width: 100px;
+  margin: 10px auto;
+  background: #57addf;
+  border: none;
+  border-radius: 50px;
+}
+
+@media only screen and (max-width: 900px) {
+  form {
+    padding-top: 40px;
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 550px) {
+  form {
+    padding-top: 40px;
+    width: 80%;
+  }
+}/*# sourceMappingURL=contact.css.map */

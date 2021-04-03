@@ -1,5 +1,31 @@
 nav {
   padding: 10px 0;
+  width: 90vw;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+nav .hBMenu {
+  width: 0px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+nav .hBMenu .line {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 3px 0;
+  background: white;
+  width: 35px;
+  height: 5px;
+  z-index: 99;
 }
 nav ul {
   display: -webkit-box;
@@ -21,9 +47,8 @@ nav a {
   background-color: rgba(0, 0, 0, 0.8);
   -webkit-clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
           clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
-  border-top-right-radius: 20px;
   font-weight: 100;
-  font-size: 12px;
+  font-size: 14px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
@@ -33,4 +58,151 @@ nav a:hover {
 }
 nav .activeNavItem {
   background-color: #57addf;
-}/*# sourceMappingURL=nav.css.map */
+}
+
+@media only screen and (max-width: 700px) {
+  nav {
+    padding: 10px 0;
+    width: 90vw;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  nav .hBMenu {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 99;
+  }
+  nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    list-style: none;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    background-color: #57addf;
+    left: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 0;
+    overflow: hidden;
+    max-width: 100%;
+    z-index: 9;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  nav ul a {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: block;
+    padding: 10px 40px;
+    text-decoration: none;
+    color: white;
+    background: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 35px;
+    font-weight: 800;
+    -webkit-clip-path: none;
+            clip-path: none;
+    width: 100vw;
+  }
+  nav .menuNav.showMenu {
+    width: 100%;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+}
+/*
+
+
+nav{
+    padding: 10px 0;
+    width: 90vw;
+    margin: 0 auto;
+    margin-top: 10px;
+    .hBMenu{
+        width: 50px;
+        display: none;
+    }
+    ul{
+        display: flex;
+        align-items: center;
+    }
+    li{
+        list-style: none;
+    }
+    a{
+        padding: 10px 20px;
+        padding-right: 30px;
+        text-decoration: none;
+        color: white;
+        background: white;
+        background-color: rgba(0, 0, 0, 0.8);     
+        clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
+
+        font-weight: 100;
+        font-size: 12px;
+        transition: 0.2s;
+    }
+    a:hover{
+        background-color: rgb(87, 173, 223);
+        opacity: 0.8;
+    }
+
+    .activeNavItem{
+        background-color: rgb(87, 173, 223);
+    }
+}
+
+@media only screen and (max-width: 900px) {
+        nav{
+            opacity: 1;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            ul{
+            display: none;
+            flex-direction: column;
+
+            li{
+
+                width: 100%;
+
+            }
+            a{
+                display: block;
+                width: 100%;
+                text-align: center;
+                padding:20px 0;
+                text-decoration: none;
+                color: white;
+                background: white;
+                background-color: rgba(0, 0, 0, 0.8);     
+                clip-path: none;
+
+                font-weight: 100;
+                font-size: 12px;
+                transition: 0.2s;
+            }
+        }   
+        .hBMenu{
+            width: 40px;
+            display:inline-block;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 99;
+        }
+    }
+}  
+
+*//*# sourceMappingURL=nav.css.map */

@@ -1,50 +1,22 @@
-h1 {
-  color: #57addf;
-  font-size: 65px;
-  font-weight: 800;
-}
-
-h3 {
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 1.5px;
-  background: #57addf;
-  color: white;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 2px 20px;
-  list-style-type: square;
-}
-
-p {
-  font-weight: 100;
-  font-size: 12px;
-  color: white;
-  padding: 5px 0;
-}
-
-.skill {
-  margin: 10px;
-}
-
 .skillsWrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 50%;
+  min-width: 60%;
+  max-width: 80%;
   margin: auto;
-  -webkit-box-shadow: 0 0 5px #303030;
-          box-shadow: 0 0 5px #303030;
+}
+.skillsWrapper h2 {
+  padding: 20px;
+  text-align: center;
 }
 .skillsWrapper .skillsText {
-  width: 55%;
+  margin: auto;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "sk1 sk2 sk3" "sk4 sk5 sk6";
+}
+.skillsWrapper .skillsText .skill {
+  min-height: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -52,20 +24,93 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: solid 2px #303030;
+}
+.skillsWrapper .skillsText .skill h3 {
+  text-align: center;
+  width: 100%;
+}
+.skillsWrapper .skillsText .blue {
+  border: solid 2px #57addf;
+}
+.skillsWrapper .skillsText #skill1 {
+  grid-area: sk1;
+}
+.skillsWrapper .skillsText #skill2 {
+  grid-area: sk2;
+}
+.skillsWrapper .skillsText #skill3 {
+  grid-area: sk3;
+}
+.skillsWrapper .skillsText #skill4 {
+  grid-area: sk4;
+}
+.skillsWrapper .skillsText #skill5 {
+  grid-area: sk5;
+}
+.skillsWrapper .skillsText #skill6 {
+  grid-area: sk6;
 }
 
 .knowOf {
-  width: 45%;
-  height: 100%;
+  padding-bottom: 20px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "ko1 ko2 ko3 ko4 ko5";
 }
-.knowOf .KOTitle {
-  background: none;
-  text-decoration: underline;
+.knowOf .skill {
+  min-height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: solid 2px #303030;
+  border-bottom: solid 2px #303030;
+}
+.knowOf .blue {
+  background: #57addf;
+}
+.knowOf #KO1 {
+  grid-area: ko1;
+}
+.knowOf #KO2 {
+  grid-area: ko2;
+}
+.knowOf #KO3 {
+  grid-area: ko3;
+}
+.knowOf #KO4 {
+  grid-area: ko4;
+}
+.knowOf #KO5 {
+  grid-area: ko5;
+}
+
+.KOTitle {
+  text-align: center;
+  width: 100%;
+  padding: 20px;
 }
 
 .stackIcons {
-  width: 100%;
-  margin: 10px auto;
+  padding: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -75,11 +120,47 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  display: none;
 }
 .stackIcons img {
-  width: 50px;
-  padding: 5px;
-  margin: 10px;
-  -webkit-box-shadow: 0 0 10px black;
-          box-shadow: 0 0 10px black;
+  width: 40px;
+  margin: 0 20px;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 800px) {
+  .skillsWrapper .skillsText {
+    margin: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "sk1 sk4" "sk2 sk5" "sk3 sk6";
+  }
+  .skillsWrapper .knowOf {
+    margin: auto;
+    padding-bottom: 20px;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "ko1 ko2 ko3 " "ko4 ko5 .";
+  }
+}
+@media only screen and (max-width: 550px) {
+  .skillsWrapper .skillsText {
+    margin: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "sk1 " "sk2" "sk3" "sk4" "sk5" "sk6";
+  }
+  .skillsWrapper .knowOf {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "ko1 ko4" "ko2 ko5" "ko3 .";
+  }
 }/*# sourceMappingURL=skills.css.map */

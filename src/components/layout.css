@@ -1,4 +1,121 @@
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: "muli";
+  background: url("/images/lightdark.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Roboto", sans-serif;
+  min-width: 280px;
+}
+
+.githubBanner {
+  -webkit-clip-path: polygon(0 0, 35% 0, 100% 65%, 100% 100%);
+          clip-path: polygon(0 0, 35% 0, 100% 65%, 100% 100%);
+  background-color: #57addf;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 300px;
+  width: 300px;
+  z-index: 99;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.githubLink {
+  background: url("/images/githubWhite.png");
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  border-radius: 50px;
+  left: 20px;
+  bottom: 30px;
+}
+
+.btmLeftCorner {
+  -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%);
+          clip-path: polygon(0 0, 0 100%, 100% 100%);
+  background-color: #57addf;
+  position: relative;
+  left: 50px;
+  margin-top: -115px;
+  z-index: 99;
+  height: 120px;
+  width: 120px;
+}
+
+h1 {
+  color: #57addf;
+  font-size: 65px;
+  font-weight: 800;
+}
+
+h2 {
+  padding: 20px 0;
+  font-size: 25px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: white;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  list-style-type: square;
+}
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+  color: white;
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    height: 80vh;
+  }
+
+  .githubBanner {
+    display: none;
+  }
+
+  .btmLeftCorner {
+    display: none;
+  }
+}
+@media only screen and (max-width: 900px) {
+  h1 {
+    color: #57addf;
+    font-size: 40px;
+    font-weight: 800;
+  }
+
+  h2 {
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 0px;
+  }
 }/*# sourceMappingURL=layout.css.map */
