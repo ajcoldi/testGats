@@ -5,7 +5,7 @@ body{
 .projectsWrapper{
     width: 100%;
     padding: 0 5%;
-    margin-top: 20px;
+    
     text-align: center;
     hr{
         margin-bottom: 40px;
@@ -18,7 +18,8 @@ body{
             background: rgb(87, 173, 223);
             border: none; 
             color: white;
-            padding: 5px 10px;
+            padding: 5px;
+          
             border-radius: 50px;
         }
         button:hover{
