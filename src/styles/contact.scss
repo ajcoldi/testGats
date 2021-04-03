@@ -13,10 +13,7 @@ form{
     margin: auto;
     border-radius: 5px;
     border: solid 2px #303030;
-    padding: 20px;
-    p{
-        label{
-            font-size: 0px;
+    
             input{
                 width: 100%;
                 height: 40px;
@@ -32,7 +29,7 @@ form{
                 font-size: 16px;
                 font-family: 'Roboto', sans-serif;
                 padding: 5px;
-              }
+              
         }
     }
     
@@ -53,7 +50,7 @@ form{
         border: none;
         border-radius: 50px;
     }
-}
+
 @media only screen and (max-width: 900px) {
     form{
        padding-top: 40px;
