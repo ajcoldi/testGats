@@ -8,7 +8,7 @@ const contactPage = () => {
     return (
         <Layout>
             <div className="formWrapper">
-            <form name="contact" method="POST" data-netlify="true">
+            <form method="POST" action="/thank-you/english.html" name="contact" data-netlify="true"  data-netlify-honeypot="bot-field" enctype="application/x-www-form-urlencoded"  >
   <p>
     <label>Your Name: <input type="text" name="name" /></label>   
   </p>
