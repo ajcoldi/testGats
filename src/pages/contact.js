@@ -8,28 +8,29 @@ const contactPage = () => {
     return (
         <Layout>
             <div className="formWrapper">
-            
-            <form name="contactForm" data-netlify="true" method="POST" onSubmit={handleSubmit}>
-            <input type="hidden" name="form-name" value="contactForm" />
-                <p>
-                <label>
-                    Your Name: <input type="text" name="name" value={fullName} onChange={(e)=>handleFullName(e.target.value)} />
-                </label>
-                </p>
-                <p>
-                <label>
-                    Your Email: <input type="email" name="email" value={email} onChange={(e)=>handleEmail(e.target.value)} />
-                </label>
-                </p>
-                <p>
-                <label>
-                    Message: <textarea name="message" value={message} onChange={(e)=>handleMessage(e.target.value)} />
-                </label>
-                </p>
-                <p>
+                
+            <form name="contact" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact"></input>
+            <p>
+                <label>Your Name: <input type="text" name="name" /></label>   
+            </p>
+            <p>
+                <label>Your Email: <input type="email" name="email" /></label>
+            </p>
+            <p>
+                <label>Your Role: <select name="role[]" multiple>
+                <option value="leader">Leader</option>
+                <option value="follower">Follower</option>
+                </select></label>
+            </p>
+            <p>
+                <label>Message: <textarea name="message"></textarea></label>
+            </p>
+            <p>
                 <button type="submit">Send</button>
-                </p>
+            </p>
             </form>
+           
 
 
 
