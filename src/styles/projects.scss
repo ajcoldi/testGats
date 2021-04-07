@@ -8,15 +8,16 @@ hr{
 }
 .projectsWrapper{
     width: 100%;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     grid-row-gap: 20px;
     .project{   
         width: 50%;
         margin: auto;
-        float: left;
         display: flex;
-        
+        margin-bottom: 40px;
+        float: left;
         .projectText{
           display: flex;
           flex-direction: column;
@@ -38,15 +39,28 @@ hr{
           flex: 1;
             width: 100px;
             padding: 10px 5px;
+            transition: 0.2s;
         }
+        
         .visitPageBtn{
           border: solid 2px rgb(87, 173, 223);
           color: white;
           background: none;
         }
+        .visitPageBtn:hover{
+          background:rgb(87, 173, 223) ;
+          border: solid 2px rgb(87, 173, 223);
+          color: black;
+        }
         .viewCodeBtn{
           background:rgb(87, 173, 223) ;
           border: solid 2px rgb(87, 173, 223);
+        }
+        .viewCodeBtn:hover{
+          border: solid 2px rgb(87, 173, 223);
+          color: white;
+          background: none;
+          
         }
         button:hover{
             cursor: pointer;
@@ -60,17 +74,44 @@ hr{
         flex-direction: column;
         grid-row-gap: 20px;
         .project{   
-          width: 50%;
-          margin: auto;
+          width: 450px;
+         
           float: none;
           display: flex;
   
-          min-width: 450px;
+         
           
         }  
       }
     }
+    @media only screen and (max-width: 500px) {
+      .projectsWrapper{
+      .project{   
+        grid-gap: 10px;
+        width: 300px;
+        float: none;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        .projectText{
+          display: flex;
+          flex-direction: column;
+          padding: 0px;
+        
+          p{
+            flex: 1;
+            padding: 20px;
 
+          }
+
+          .projectTextBtn{
+            justify-content: center;
+
+          }
+        }
+        }
+    }}
 
 
 
