@@ -30,7 +30,7 @@ const projectPage = () => {
                     <div className="projectTextBtn">
                       
                       <a target="_blank" href="https://ajcoldi.github.io/TakeawayProject/index.html"><button className="visitPageBtn">Visit Webpage</button></a>
-                      <a href="#"><button className="viewCodeBtn">View code</button></a>
+                      <a target="_blank" href="https://github.com/ajcoldi/ajcoldi.github.io/tree/main/TakeawayProject"><button className="viewCodeBtn">View code</button></a>
                     </div>
                 </div>
             </div>
@@ -45,8 +45,8 @@ const projectPage = () => {
                     <p>This webpage was designed and built by me using Photoshop, SASS, JqueryUI and Jquery.</p>
                     <div className="projectTextBtn">
                       
-                      <a target="_blank" href="https://ajcoldi.github.io/TakeawayProject/index.html"><button className="visitPageBtn">Visit Webpage</button></a>
-                      <a href="#"><button className="viewCodeBtn">View code</button></a>
+                      <a target="_blank" href="https://ajcoldi.github.io/HolidayProject/index.html"><button className="visitPageBtn">Visit Webpage</button></a>
+                      <a target="_blank" href="https://github.com/ajcoldi/ajcoldi.github.io/tree/main/HolidayProject"><button className="viewCodeBtn">View code</button></a>
                     </div>
                 </div>
             </div>

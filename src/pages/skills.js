@@ -16,7 +16,7 @@ const skillsPage = () => {
                     
                         <div id="skill1" className="skill blue">
                             <div className="logoContainer">
-                                <img className="logo" id="img1" src="images/stackIcons/htmlIcon.png" alt="css3"></img>
+                                <img className="logo" id="img1" src="images/stackIcons/htmlIcon.png" alt="HTML Logo"></img>
                             </div>
                             <div className="skillText">
                                 <h3>HTML</h3>
@@ -25,7 +25,7 @@ const skillsPage = () => {
                         </div>
                         <div id="skill2" className="skill blue">
                             <div className="logoContainer">
-                                <img className="logo" id="img2" src="images/stackIcons/cssIcon.png" alt="css3"></img>
+                                <img className="logo" id="img2" src="images/stackIcons/cssIcon.png" alt="CSS Logo"></img>
                             </div>
                             <div className="skillText">
                                 <h3>CSS</h3>
@@ -34,7 +34,7 @@ const skillsPage = () => {
                         </div>
                         <div id="skill3" className="skill blue">
                             <div className="logoContainer">
-                                <img className="logo" id="img3" src="images/stackIcons/javascriptIcon.png" alt="css3"></img>
+                                <img className="logo" id="img3" src="images/stackIcons/javascriptIcon.png" alt="JS Logo"></img>
                             </div>
                             <div className="skillText">
                                 <h3>JAVASCRIPT/JQUERY</h3>
@@ -43,7 +43,7 @@ const skillsPage = () => {
                         </div>
                         <div id="skill4" className="skill blue">
                             <div className="logoContainer">
-                                <img className="logo" id="img4" src="images/stackIcons/bootstrapIcon.png" alt="css3"></img>
+                                <img className="logo" id="img4" src="images/stackIcons/bootstrapIcon.png" alt="Bootstrap Logo"></img>
                             </div>
                             <div className="skillText">
                                 <h3>BOOTSTRAP</h3>
@@ -51,7 +51,7 @@ const skillsPage = () => {
                         </div>
                         <div id="skill5" className="skill blue">
                             <div className="logoContainer">
-                                <img className="logo" id="img5" src="images/stackIcons/reactIcon.png" alt="css3"></img>
+                                <img className="logo" id="img5" src="images/stackIcons/reactIcon.png" alt="React Logo"></img>
                             </div>
                             <div className="skillText">
                                 <h3>REACT/GATSBY</h3>
@@ -60,7 +60,7 @@ const skillsPage = () => {
                         </div>
                         <div id="skill6" className="skill blue">
                             <div className="logoContainer">
-                                <img className="logo" id="img6" src="images/stackIcons/gitIcon.png" alt="css3"></img>
+                                <img className="logo" id="img6" src="images/stackIcons/gitIcon.png" alt="Git Logo"></img>
                             </div>
                             <div className="skillText">
                                 <h3>GIT</h3>
