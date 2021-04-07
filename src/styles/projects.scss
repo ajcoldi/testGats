@@ -8,7 +8,7 @@ hr{
 }
 .projectsWrapper{
     width: 100%;
-    padding: 20px;
+    padding: 20px 80px;
     display: flex;
     flex-direction: column;
     grid-row-gap: 20px;
@@ -67,12 +67,13 @@ hr{
         }
     }
 
-    @media only screen and (max-width: 1000px) {
+    @media only screen and (max-width: 1150px) {
       .projectsWrapper{
         width: 100%;
         display: flex;
         flex-direction: column;
         grid-row-gap: 20px;
+        padding: 20px ;
         .project{   
           width: 450px;
          
@@ -86,6 +87,7 @@ hr{
     }
     @media only screen and (max-width: 500px) {
       .projectsWrapper{
+        padding: 0px;
       .project{   
         grid-gap: 10px;
         width: 300px;

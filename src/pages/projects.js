@@ -26,7 +26,7 @@ const projectPage = () => {
                 </div>
                 <div className="projectText">
                     <h3>Resturant Webpage</h3>
-                    <p>This webpage was designed and built by me using Photoshop, vanilla CSS, JsFiddle and Jquery.</p>
+                    <p>This webpage was designed and built by me using Photoshop, vanilla CSS, JQueryUI and Jquery.</p>
                     <div className="projectTextBtn">
                       
                       <a target="_blank" href="https://ajcoldi.github.io/TakeawayProject/index.html"><button className="visitPageBtn">Visit Webpage</button></a>
@@ -41,8 +41,8 @@ const projectPage = () => {
                     </a>
                 </div>
                 <div className="projectText">
-                    <h3>Resturant Webpage</h3>
-                    <p>This webpage was designed and built by me using Photoshop, vanilla CSS, JsFiddle and Jquery.</p>
+                    <h3>Holiday Webpage</h3>
+                    <p>This webpage was designed and built by me using Photoshop, SASS, JqueryUI and Jquery.</p>
                     <div className="projectTextBtn">
                       
                       <a target="_blank" href="https://ajcoldi.github.io/TakeawayProject/index.html"><button className="visitPageBtn">Visit Webpage</button></a>
@@ -63,8 +63,8 @@ const projectPage = () => {
                     </a>
                 </div>
                 <div className="projectText">
-                    <h3>Resturant Webpage</h3>
-                    <p>This webpage was designed and built by me using Photoshop, vanilla CSS, JsFiddle and Jquery.</p>
+                    <h3>Legacy Ipod Web Design</h3>
+                    <p>The design was created using Photoshop</p>
                 </div>
             </div>
             <div className="project">
@@ -74,8 +74,8 @@ const projectPage = () => {
                     </a>
                 </div>
                 <div className="projectText">
-                    <h3>Resturant Webpage</h3>
-                    <p>This webpage was designed and built by me using Photoshop, vanilla CSS, JsFiddle and Jquery.</p>
+                    <h3>Furniture Store Web Design</h3>
+                    <p>The design was created using Photoshop</p>                
                 </div>
             </div>
             <div className="project">
@@ -85,8 +85,9 @@ const projectPage = () => {
                     </a>
                 </div>
                 <div className="projectText">
-                    <h3>Resturant Webpage</h3>
-                    <p>This webpage was designed and built by me using Photoshop, vanilla CSS, JsFiddle and Jquery.</p>
+                    <h3>Boston Dynamics Web Design</h3>
+                    <p>The design was created using Photoshop</p>                
+                    
                 </div>
             </div>
             <div className="project">
@@ -96,8 +97,8 @@ const projectPage = () => {
                     </a>
                 </div>
                 <div className="projectText">
-                    <h3>Resturant Webpage</h3>
-                    <p>This webpage was designed and built by me using Photoshop, vanilla CSS, JsFiddle and Jquery.</p>
+                    <h3>The Deep Web Design</h3>
+                    <p>The design was created using Photoshop</p>                
                 </div>
             </div>
       </div>
@@ -113,8 +114,8 @@ const projectPage = () => {
                     </a>
                 </div>
                 <div className="projectText">
-                    <h3>Resturant Webpage</h3>
-                    <p>This webpage was designed and built by me using Photoshop, vanilla CSS, JsFiddle and Jquery.</p>
+                    <h3>Pencil Drawing - Taxi Driver</h3>
+                    <p>A portrait of Robert Deniro in Taxi Driver, Apologies for the low res image</p>
                 </div>
             </div>
             <div className="project">
@@ -124,8 +125,8 @@ const projectPage = () => {
                     </a>
                 </div>
                 <div className="projectText">
-                    <h3>Resturant Webpage</h3>
-                    <p>This webpage was designed and built by me using Photoshop, vanilla CSS, JsFiddle and Jquery.</p>
+                    <h3>Neo Nior Concept art</h3>
+                    <p>Graphics tablet drawing for a game concept when I studied game design. Based on blade runner</p>
                 </div>
             </div>
             <div className="project">
@@ -135,8 +136,8 @@ const projectPage = () => {
                     </a>
                 </div>
                 <div className="projectText">
-                    <h3>Resturant Webpage</h3>
-                    <p>This webpage was designed and built by me using Photoshop, vanilla CSS, JsFiddle and Jquery.</p>
+                    <h3>Moon Shroom Biro Drawing</h3>
+                    <p>Biro Doodle from Inktober</p>
                 </div>
             </div>
             <div className="project">
@@ -146,8 +147,8 @@ const projectPage = () => {
                     </a>
                 </div>
                 <div className="projectText">
-                    <h3>Resturant Webpage</h3>
-                    <p>This webpage was designed and built by me using Photoshop, vanilla CSS, JsFiddle and Jquery.</p>
+                    <h3>Monkey Head Biro Drawing</h3>
+                    <p>Biro Doodle from Inktober</p>
                 </div>
             </div>
             <div className="project">
@@ -157,8 +158,8 @@ const projectPage = () => {
                     </a>
                 </div>
                 <div className="projectText">
-                    <h3>Resturant Webpage</h3>
-                    <p>This webpage was designed and built by me using Photoshop, vanilla CSS, JsFiddle and Jquery.</p>
+                    <h3>Futuristic Military Helmet - Concept art</h3>
+                    <p>Designed for a game design project in college</p>
                 </div>
             </div>
         </div>

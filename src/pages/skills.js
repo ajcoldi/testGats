@@ -43,10 +43,10 @@ const skillsPage = () => {
                         </div>
                         <div id="skill4" className="skill blue">
                             <div className="logoContainer">
-                                <img className="logo" id="img4" src="images/stackIcons/jqueryIcon.png" alt="css3"></img>
+                                <img className="logo" id="img4" src="images/stackIcons/bootstrapIcon.png" alt="css3"></img>
                             </div>
                             <div className="skillText">
-                                <h3>LIGHTBOX</h3>
+                                <h3>BOOTSTRAP</h3>
                             </div>
                         </div>
                         <div id="skill5" className="skill blue">
@@ -60,7 +60,7 @@ const skillsPage = () => {
                         </div>
                         <div id="skill6" className="skill blue">
                             <div className="logoContainer">
-                                <img className="logo" id="img6" src="images/stackIcons/gatsbyIcon.png" alt="css3"></img>
+                                <img className="logo" id="img6" src="images/stackIcons/gitIcon.png" alt="css3"></img>
                             </div>
                             <div className="skillText">
                                 <h3>GIT</h3>
