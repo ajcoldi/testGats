@@ -10,8 +10,9 @@ body{
         
         text-align: center;
     }
-    .skillsText{
-        
+    .skillsSection{
+
+        padding: 20px 0;
         margin: auto;
         text-align: center;
         display: grid;
@@ -22,21 +23,48 @@ body{
             "sk4 sk5 sk6"
         ;
         .skill{
-            min-height: 200px;
-
+            min-height: 100px;
             display: flex;   
-            flex-direction: column;
             justify-content: center;
             align-items: center;
-            border: solid 2px #303030;    
-            h3{
-                text-align: center;
-                width: 100%;
+              
+
+            .logoContainer{
+                flex: 1;
+                
+                .mockLogo{
+                    width: 35px;
+                    height: 35px;
+                    background: white;
+                    border-radius: 50px;
+                    margin: auto;
+
+                }
             }
-            p{}
+            .skillText{
+                flex: 4;
+                text-align: left;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                grid-gap: 5px;
+                height: 100%;
+                
+          
+                h3{
+                    width: 100%;
+                 
+                   
+                }
+                p{
+                 
+                    width: 100%;
+                }
+            }
     }   
         .blue{
-            border: solid 2px rgb(87, 173, 223);
+           
             
         }
     #skill1{grid-area: sk1;}
@@ -49,7 +77,7 @@ body{
 }
 
         .knowOf{ 
-                 padding-bottom: 20px;
+                padding-bottom: 20px;
                 margin: auto;
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -65,10 +93,9 @@ body{
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;  
-                    border-top: solid 2px #303030;   
-                    border-bottom: solid 2px #303030;   
+                   
                 }
-                .blue{background: rgb(87, 173, 223);}
+                
                 #KO1{grid-area: ko1;}
                 #KO2{grid-area: ko2;}
                 #KO3{grid-area: ko3;}
@@ -89,23 +116,14 @@ body{
 
 
 
-
-
-        .stackIcons{
-            padding: 40px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            display: none;
-            img{
+            .logo{
                 width: 40px;
                 margin: 0 20px ;
                 display: inline-block;
             }
-        }
-        @media only screen and (max-width: 800px) {
+                @media only screen and (max-width: 800px) {
             .skillsWrapper{
-                .skillsText{
+                .skillsSection{
             
                 
                     margin: auto;
@@ -133,7 +151,7 @@ body{
         }}
         @media only screen and (max-width: 550px) {
             .skillsWrapper{
-                .skillsText{
+                .skillsSection{
             
     
                     margin: auto;

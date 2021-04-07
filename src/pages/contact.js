@@ -7,8 +7,8 @@ import Layout from '../components/layout'
 const contactPage = () => {
     return (
         <Layout>
-               <h2>Web Development</h2>
-        
+               <h2>Contact Me</h2>
+               <hr/>
             <div className="formWrapper">
                 
             <form name="contact" method="POST" data-netlify="true">

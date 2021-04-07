@@ -1,62 +1,99 @@
 
 body{
   min-width: 300px;
+ 
+}
+hr{
+  margin-bottom: 40px;
 }
 .projectsWrapper{
     width: 100%;
-    padding: 0 5%;
-    
-    text-align: center;
-    hr{
-        margin-bottom: 40px;
-    }
-    .project{  
-        display: inline-block; 
-        img{}    
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 20px;
+    .project{   
+        width: 50%;
+        margin: auto;
+        float: left;
+        display: flex;
+        
+        .projectText{
+          display: flex;
+          flex-direction: column;
+          padding: 20px;
+          h3 {
+            flex: 1;
+            text-decoration: underline;}
+          p{flex: 1;}
+          .projectTextBtn{
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            grid-gap: 10px;
+            flex: 1;
+          }
+        }
         }
         button{
-            background: rgb(87, 173, 223);
-            border: none; 
-            color: white;
-            padding: 5px;
-          
-            border-radius: 50px;
+          flex: 1;
+            width: 100px;
+            padding: 10px 5px;
+        }
+        .visitPageBtn{
+          border: solid 2px rgb(87, 173, 223);
+          color: white;
+          background: none;
+        }
+        .viewCodeBtn{
+          background:rgb(87, 173, 223) ;
+          border: solid 2px rgb(87, 173, 223);
         }
         button:hover{
             cursor: pointer;
         }
     }
-@media only screen and (max-width: 500px) {
-  .projectsWrapper{
-    width: 100%;
-    padding: 0 0%;
-    .project{  
-        display: inline-block;
-        margin: 0 auto;
-        width: 250px;
-        height: 250px;
-        margin: 0 20px;
-        img{
-            width: 100%;
-            height: 100%;
-        }
+
+    @media only screen and (max-width: 1000px) {
+      .projectsWrapper{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        grid-row-gap: 20px;
+        .project{   
+          width: 50%;
+          margin: auto;
+          float: none;
+          display: flex;
+  
+          min-width: 450px;
+          
+        }  
+      }
     }
-}
-}
+
+
+
+
+
 
 .gallery-wrapper {
-    width: 100%;
-    
+    width: 100%;  
+   overflow: hidden;
+  
+  }
+  .gallery-wrapper .image-wrapper{
+
   }
   .gallery-wrapper .image-wrapper a {
-    padding: 0.5em;
+   
     display: block;
-    width: 100%;
+    
     text-decoration: none;
     color: #333;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     transition: all 200ms ease-in-out;
     text-align: center;
+
 
   }
   .image-title{text-align: center;}
@@ -65,7 +102,7 @@ body{
     
   }
   .gallery-wrapper .image-wrapper a img {
-    width: 100%;
+
     
   }
   .gallery-lightboxes .image-lightbox {
@@ -197,3 +234,4 @@ body{
     width: 100%;
 
   }
+
